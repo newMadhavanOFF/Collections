@@ -1,0 +1,27 @@
+<------LinkedList------->
+
+-> LinkedList implements the collection interface.
+-> It uses Doubly linked List to store the elements.
+-> It contains Duplicate elements.
+-> It maintain insertion Order.
+-> It is Non-Synchronized.
+-> Manipulation is fast because no Shiffting is required.
+
+--------Example----------------------------------------------------------------------------------------------------------------------------------------
+import java.util.*;
+class LinkedLists{
+    public static void main(String[] args) {
+        LinkedList<Integer> list=new LinkedList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        list.add(5);
+       // list.remove(2);
+        Iterator<Integer> itr=list.iterator();
+        while(itr.hasNext()){
+            System.out.println(itr.next());
+        }
+
+    }
+}
