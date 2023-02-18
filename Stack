@@ -1,0 +1,26 @@
+-----STACK--------                                  
+-> It is the subclass of VECTOR.
+-> It implements by  using LIFO  data structure.
+--Methods----------------------------------------------------------------------------
+boolean push() -> Push the element into the stack on to the top of the stack.
+boolean peek() -> fetch the first element from the stack.
+boolean push(Object ob) -> push the object into the stack.
+-----EXAMPLE-------------------------------------------------------------------------
+import java.util.*;
+ class StackL{
+    public static void main(String[] args) {
+        Stack<Integer> list =new Stack<>();
+        list.push(1);
+        list.push(2);
+        list.push(3);
+        list.push(4);
+        list.push(5);
+        list.push(6);
+        list.pop();
+       
+        Iterator<Integer> itr=list. iterator();
+         while(itr.hasNext()){
+            System.out.println(itr.next());
+         }
+    }
+ }
